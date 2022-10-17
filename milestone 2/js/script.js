@@ -15,3 +15,13 @@ for (let i = 0; i < imagesArray.lenght; i++) {
   <img class="item" src="img/${imagesArray[i]}" alt="${imagesArray[i]}">
   `;
 }
+
+let counterImages = 0;
+
+const next = document.querySelector('.top');
+const prev = document.querySelector('.bottom');
+console.log(next);
+
+slider.innerHTML += imagesTags;
+
+const items = document.getElementsByClassName('item');
